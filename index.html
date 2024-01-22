@@ -14,6 +14,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- custom Tailwind use -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            "btn-color": '#B68C5A',
+          }
+        }
+      }
+    }
+  </script>
+    <!-- custom css  -->
     <style>
         .font-poppins {
            font-family: 'Poppins', sans-serif;
@@ -57,12 +71,129 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+              <a class="btn bg-btn-color text-white">Free Consultation</a>
             </div>
           </div>
      </nav>
+     <!-- banner section -->
+     <div>
+        <div class="hero mt-10" style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content py-20">
+              <div class="lg:max-w-[700px] font-ga-garamond">
+                <h1 class="mb-5 text-4xl lg:text-6xl font-extrabold">We Provide Effective <br>
+                    Legal Solutions</h1>
+                <p class="mb-5 font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="flex flex-col lg:flex-row gap-3">
+                    <input type="text" class="md:pr-3 md:pl-2 lg:pr-10 lg:pl-5 py-3 rounded-lg"  name="" id="" placeholder="search your services">
+                    <button class="btn bg-btn-color w-28 text-white">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+     </div>
     </header>
-    <main>
+    <main class="max-w-6xl mx-auto mt-20">
+        <!-- legal practice area section -->
+        <section class="text-center">
+            <h2 class="text-2xl lg:text-4xl font-extrabold font-ga-garamond ">The Legal Practice Area</h2>
+            <p class="font-poppins mt-3 text-[#707070] lg:w-3/4 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+         <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+            <!-- first area -->
+            <div class="card p-2 mt-8">
+                <figure class="px-10 pt-10">
+                  <img src="images/business.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-3xl font-extrabold font-ga-garamond">Business Law</h2>
+                  <p class="font-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                  <div class="card-actions">
+                    <button class="btn bg-btn-color rounded-ful text-white"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+            </div>
+         
+              </div>
+              <!-- second are -->
+            <div class="card p-2 mt-8 bg-gradient-to-r from-[#F3F3F3] to-[#f3f3f3]">
+                <figure class="px-10 pt-10">
+                  <img src="images/criminal.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-3xl font-extrabold font-ga-garamond">Criminal Law</h2>
+                  <p class="font-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                  <div class="card-actions">
+                    <button class="btn bg-btn-color rounded-ful text-white"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+            </div>
+           
+              </div>
+              <!-- Third area -->
+            <div class="card p-2 mt-8">
+                <figure class="px-10 pt-10">
+                  <img src="images/child.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-3xl font-extrabold font-ga-garamond">Child Support</h2>
+                  <p class="font-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                  <div class="card-actions">
+                    <button class="btn bg-btn-color rounded-ful text-white"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+            </div>
+              </div>
+              <!-- forth area -->
+            <div class="card p-2 mt-8">
+                <figure class="px-10 pt-10">
+                  <img src="images/education.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-3xl font-extrabold font-ga-garamond">Education Law</h2>
+                  <p class="font-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                  <div class="card-actions">
+                    <button class="btn bg-btn-color rounded-ful text-white"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+            </div>
+              </div>
+              <!-- fifth area -->
+            <div class="card p-2 mt-8">
+                <figure class="px-10 pt-10">
+                  <img src="images/divorce.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-3xl font-extrabold font-ga-garamond">Divorce Law</h2>
+                  <p class="font-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                  <div class="card-actions">
+                    <button class="btn bg-btn-color rounded-ful text-white"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+            </div>
+              </div>
+              <!-- sixth area -->
+            <div class="card p-2 mt-8">
+                <figure class="px-10 pt-10">
+                  <img src="images/tax.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="text-3xl font-extrabold font-ga-garamond">Tax Law</h2>
+                  <p class="font-poppins">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                  </p>
+                  <div class="card-actions">
+                    <button class="btn bg-btn-color rounded-ful text-white"><i class="fa-solid fa-circle-right"></i></button>
+                </div>
+            </div>
+              </div>
+         </div>
+        </section>
 
     </main>
     <footer>
